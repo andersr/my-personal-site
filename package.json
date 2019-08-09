@@ -1,0 +1,14 @@
+{
+  "name": "my-personal-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andersr/my-personal-site.git",
+  "author": "Anders <anders@anders.co>",
+  "license": "MIT",
+  "scripts": {
+    "deploy:staging": "surge --domain https://my-personal-site-tutorial-staging.surge.sh/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
