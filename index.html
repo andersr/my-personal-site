@@ -4,15 +4,49 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Personal Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" />
+  <style>
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      padding: 0.5em 1em;
+    }
+
+    .hero {
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Hi, I'm Anders Ramsay. Thanks for stopping by!</h1>
-  <ul>
-    <li><a href="https://github.com/andersr">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/andersramsay/">LinkedIn</a></li>
-    <li><a href="mailto:anders+web@anders.co">Contact</a></li>
-  </ul>
+  <div class="hero">
+    <div>
+      <h1>Hi, I'm Anders Ramsay. Thanks for stopping by!</h1>
+      <ul>
+        <li><a href="https://github.com/andersr">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/andersramsay/">LinkedIn</a></li>
+        <li><a href="mailto:anders+web@anders.co">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
