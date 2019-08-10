@@ -8,7 +8,7 @@
     integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" /> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    /* apply a natural box layout model to all elements, but allowing components to change */
+    /* OTHER THINGS YOU MIGHT DO apply a natural box layout model to all elements, but allowing components to change */
     /* html {
       box-sizing: border-box;
     }
@@ -36,7 +36,7 @@
       justify-content: center;
     }
 
-    .hero.content {
+    .hero__content {
       /* add for large screens */
       max-width: 25em;
       margin-left: auto;
@@ -46,6 +46,13 @@
     h1 {
       font-size: 1.5em;
       line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1;
+      margin-bottom: 0;
     }
 
     ul.inline {
@@ -62,8 +69,10 @@
 
 <body>
   <div class="hero">
-    <div class="hero content">
-      <h1>Hi, I'm Anders Ramsay. Thanks for stopping by!</h1>
+    <div class="hero__content">
+      <h1>Hi, I'm Anders Ramsay.</h1>
+      <p>I am a web developer in Brooklyn, NY.</p>
+      <p>Thanks for stopping by!</p>
       <ul class="inline">
         <li><a href="https://github.com/andersr">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/andersramsay/">LinkedIn</a></li>
