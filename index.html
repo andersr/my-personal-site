@@ -4,11 +4,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Personal Site</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     /* apply a natural box layout model to all elements, but allowing components to change */
-    html {
+    /* html {
       box-sizing: border-box;
     }
 
@@ -16,11 +17,12 @@
     *:before,
     *:after {
       box-sizing: inherit;
-    }
+    } */
 
     html,
     body {
       height: 100%;
+      font-family: 'Open Sans', sans-serif;
     }
 
     body {
@@ -33,14 +35,36 @@
       flex-direction: column;
       justify-content: center;
     }
+
+    .hero.content {
+      /* add for large screens */
+      max-width: 25em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.4;
+    }
+
+    ul.inline {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.inline li {
+      display: inline;
+      padding-right: .25em;
+    }
   </style>
 </head>
 
 <body>
   <div class="hero">
-    <div>
+    <div class="hero content">
       <h1>Hi, I'm Anders Ramsay. Thanks for stopping by!</h1>
-      <ul>
+      <ul class="inline">
         <li><a href="https://github.com/andersr">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/andersramsay/">LinkedIn</a></li>
         <li><a href="mailto:anders+web@anders.co">Contact</a></li>
